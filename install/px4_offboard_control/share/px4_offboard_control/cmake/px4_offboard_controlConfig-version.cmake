@@ -1,0 +1,1 @@
+/home/cone/ws_offboard_control/build/px4_offboard_control/ament_cmake_core/px4_offboard_controlConfig-version.cmake

@@ -1,0 +1,8 @@
+[01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control_default.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/msg/offboard_control_mode.hpp: No such file or directory
+    1 | #include [01;31m[K<px4_msgs/msg/offboard_control_mode.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/offboard_control_default.dir/build.make:76: CMakeFiles/offboard_control_default.dir/src/offboard_control_default.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/offboard_control_default.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

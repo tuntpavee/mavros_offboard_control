@@ -1,0 +1,8 @@
+[01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:222:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kadjust_postition[m[K’ was not declared in this scope; did you mean ‘[01m[Kadjust_position[m[K’?
+  222 |         [01;31m[Kadjust_postition[m[K(4.0,0.0, -4.0, 0.0);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kadjust_position[m[K
+gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:76: CMakeFiles/offboard_control.dir/src/offboard_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/offboard_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,176 @@
+[0.080s] Invoking command in '/home/cone/ws_offboard_control/build/px4_offboard_control': CMAKE_PREFIX_PATH=/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/cone/ws_offboard_control/build/px4_offboard_control -- -j4 -l4
+[0.287s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[0.356s] [ 50%] Built target offboard_control_default
+[0.401s] [ 75%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/offboard_control.cpp.o[0m
+[12.384s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[12.385s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_control_mode_publisher_[m[K’ was not declared in this scope
+[12.385s]    26 |         [01;31m[Koffboard_control_mode_publisher_[m[K = this->create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode", 10);
+[12.386s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.455s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+[12.456s]    27 |         [01;31m[Ktrajectory_setpoint_publisher_[m[K = this->create_publisher<TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 10);
+[12.456s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.512s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_command_publisher_[m[K’ was not declared in this scope
+[12.513s]    28 |         [01;31m[Kvehicle_command_publisher_[m[K = this->create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 10);
+[12.513s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.548s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_sub_[m[K’ was not declared in this scope
+[12.549s]    30 |         [01;31m[Kodom_sub_[m[K = this->create_subscription<VehicleOdometry>(
+[12.549s]       |         [01;31m[K^~~~~~~~~[m[K
+[12.783s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_wp_index_[m[K’ was not declared in this scope
+[12.784s]    35 |         [01;31m[Kcurrent_wp_index_[m[K = 0;
+[12.784s]       |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.832s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:36:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ was not declared in this scope
+[12.833s]    36 |         [01;31m[Koffboard_setpoint_counter_[m[K = 0;
+[12.834s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.854s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:38:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[12.854s]    38 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(100ms, std::bind(&OffboardControl::timer_callback, this));
+[12.855s]       |         [01;31m[K^~~~~~[m[K
+[12.855s]       |         [32m[Ktimer_t[m[K
+[12.912s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::adjust_position(float, float, float, float)[m[K’:
+[12.913s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:47:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope
+[12.913s]    47 |         [01;31m[Kwaypoints_[m[K.push_back({x, y, z, yaw});
+[12.914s]       |         [01;31m[K^~~~~~~~~~[m[K
+[12.961s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::timer_callback()[m[K’:
+[12.962s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:59:13:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ was not declared in this scope
+[12.962s]    59 |         if ([01;31m[Koffboard_setpoint_counter_[m[K == 10) {
+[12.963s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.012s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:67:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ was not declared in this scope
+[13.012s]    67 |         [01;31m[Koffboard_setpoint_counter_[m[K++;
+[13.013s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.069s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_offboard_control_mode()[m[K’:
+[13.070s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:79:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_control_mode_publisher_[m[K’ was not declared in this scope
+[13.072s]    79 |         [01;31m[Koffboard_control_mode_publisher_[m[K->publish(msg);
+[13.098s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.111s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_trajectory_setpoint()[m[K’:
+[13.112s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:91:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_initialized_[m[K’ was not declared in this scope
+[13.113s]    91 |         if (![01;31m[Kyaw_initialized_[m[K || waypoints_.empty()) return;
+[13.113s]       |              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.139s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:91:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope
+[13.140s]    91 |         if (!yaw_initialized_ || [01;31m[Kwaypoints_[m[K.empty()) return;
+[13.141s]       |                                  [01;31m[K^~~~~~~~~~[m[K
+[13.181s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:96:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_wp_index_[m[K’ was not declared in this scope
+[13.182s]    96 |         if ([01;31m[Kcurrent_wp_index_[m[K < waypoints_.size()) {
+[13.183s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[13.209s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:96:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope
+[13.210s]    96 |         if (current_wp_index_ < [01;31m[Kwaypoints_[m[K.size()) {
+[13.210s]       |                                 [01;31m[K^~~~~~~~~~[m[K
+[13.241s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:98:80:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_yaw_[m[K’ was not declared in this scope
+[13.242s]    98 | o pos = transform_position_relative_to_yaw(wp[0], wp[1], wp[2], [01;31m[Kinitial_yaw_[m[K);
+[13.242s]       |                                                                 [01;31m[K^~~~~~~~~~~~[m[K
+[13.243s] 
+[13.243s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:99:51:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kstd::array<float, 3>[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+[13.244s]    99 |             msg.position = {pos[0], pos[1], pos[2][01;31m[K}[m[K;
+[13.245s]       |                                                   [01;31m[K^[m[K
+[13.245s] In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[13.246s]                  from [01m[K/usr/include/c++/11/functional:54[m[K,
+[13.246s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[13.247s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[13.248s]                  from [01m[K/home/cone/ws_offboard_control/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8[m[K,
+[13.248s]                  from [01m[K/home/cone/ws_offboard_control/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp:7[m[K,
+[13.249s]                  from [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:1[m[K:
+[13.250s] [01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)[m[K’
+[13.250s]    95 |     struct [01;36m[Karray[m[K
+[13.251s]       |            [01;36m[K^~~~~[m[K
+[13.252s] [01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::array<float, 3>&[m[K’
+[13.252s] [01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)[m[K’
+[13.253s] [01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::array<float, 3>&&[m[K’
+[13.271s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:103:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_yaw[m[K’?
+[13.272s]   103 |             float dx = [01;31m[Kcurrent_x_[m[K - pos[0];
+[13.272s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[13.273s]       |                        [32m[Kcurrent_yaw[m[K
+[13.298s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:104:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_yaw[m[K’?
+[13.299s]   104 |             float dy = [01;31m[Kcurrent_y_[m[K - pos[1];
+[13.299s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[13.299s]       |                        [32m[Kcurrent_yaw[m[K
+[13.326s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:105:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_z_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcurrent_yaw[m[K’?
+[13.327s]   105 |             float dz = [01;31m[Kcurrent_z_[m[K - pos[2];
+[13.328s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[13.328s]       |                        [32m[Kcurrent_yaw[m[K
+[13.359s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:111:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_hovering_[m[K’ was not declared in this scope
+[13.360s]   111 |                 if (![01;31m[Kis_hovering_[m[K) {
+[13.361s]       |                      [01;31m[K^~~~~~~~~~~~[m[K
+[13.397s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:112:21:[m[K [01;31m[Kerror: [m[K‘[01m[Khover_start_time_[m[K’ was not declared in this scope
+[13.397s]   112 |                     [01;31m[Khover_start_time_[m[K = this->now();
+[13.398s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[13.437s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:117:52:[m[K [01;31m[Kerror: [m[K‘[01m[Khover_start_time_[m[K’ was not declared in this scope
+[13.438s]   117 |                 auto hover_elapsed = this->now() - [01;31m[Khover_start_time_[m[K;
+[13.438s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[13.471s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:124:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_hovering_[m[K’ was not declared in this scope
+[13.472s]   124 |                     [01;31m[Kis_hovering_[m[K = false;
+[13.473s]       |                     [01;31m[K^~~~~~~~~~~~[m[K
+[13.510s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:125:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_change_hold_[m[K’ was not declared in this scope
+[13.510s]   125 |                     [01;31m[Kyaw_change_hold_[m[K = false;
+[13.513s]       |                     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.543s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:126:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_yaw_[m[K’ was not declared in this scope
+[13.544s]   126 |                     [01;31m[Kprevious_yaw_[m[K = current_yaw;
+[13.545s]       |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[13.578s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:130:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_yaw_[m[K’ was not declared in this scope
+[13.579s]   130 |                 if (std::abs(current_yaw - [01;31m[Kprevious_yaw_[m[K) > 0.1f) {
+[13.579s]       |                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[13.616s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:131:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_change_hold_[m[K’ was not declared in this scope
+[13.617s]   131 |                     if (![01;31m[Kyaw_change_hold_[m[K) {
+[13.617s]       |                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.660s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:132:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_hold_start_time_[m[K’ was not declared in this scope
+[13.660s]   132 |                         [01;31m[Kyaw_hold_start_time_[m[K = this->now();
+[13.661s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[13.706s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:137:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_hold_start_time_[m[K’ was not declared in this scope
+[13.707s]   137 |                     if ((this->now() - [01;31m[Kyaw_hold_start_time_[m[K) < YAW_HOLD_DURATION) {
+[13.708s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[13.760s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:138:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+[13.761s]   138 |                         [01;31m[Ktrajectory_setpoint_publisher_[m[K->publish(msg);
+[13.761s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.798s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:141:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_change_hold_[m[K’ was not declared in this scope
+[13.798s]   141 |                         [01;31m[Kyaw_change_hold_[m[K = false;
+[13.799s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.852s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:145:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+[13.853s]   145 |                 [01;31m[Ktrajectory_setpoint_publisher_[m[K->publish(msg);
+[13.853s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.883s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:148:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_hovering_[m[K’ was not declared in this scope
+[13.884s]   148 |                 [01;31m[Kis_hovering_[m[K = false;
+[13.884s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[13.915s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:152:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_yaw_[m[K’ was not declared in this scope
+[13.915s]   152 | = transform_position_relative_to_yaw(last[0], last[1], last[2], [01;31m[Kinitial_yaw_[m[K);
+[13.916s]       |                                                                 [01;31m[K^~~~~~~~~~~~[m[K
+[13.916s] 
+[13.917s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:153:51:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kstd::array<float, 3>[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+[13.917s]   153 |             msg.position = {pos[0], pos[1], pos[2][01;31m[K}[m[K;
+[13.918s]       |                                                   [01;31m[K^[m[K
+[13.918s] In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[13.919s]                  from [01m[K/usr/include/c++/11/functional:54[m[K,
+[13.920s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[13.920s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[13.921s]                  from [01m[K/home/cone/ws_offboard_control/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8[m[K,
+[13.922s]                  from [01m[K/home/cone/ws_offboard_control/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp:7[m[K,
+[13.922s]                  from [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:1[m[K:
+[13.923s] [01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)[m[K’
+[13.923s]    95 |     struct [01;36m[Karray[m[K
+[13.924s]       |            [01;36m[K^~~~~[m[K
+[13.925s] [01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::array<float, 3>&[m[K’
+[13.925s] [01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)[m[K’
+[13.926s] [01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::array<float, 3>&&[m[K’
+[13.971s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:157:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+[13.972s]   157 |         [01;31m[Ktrajectory_setpoint_publisher_[m[K->publish(msg);
+[13.973s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.021s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_vehicle_command(uint16_t, float, float)[m[K’:
+[14.024s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:172:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_command_publisher_[m[K’ was not declared in this scope
+[14.025s]   172 |         [01;31m[Kvehicle_command_publisher_[m[K->publish(msg);
+[14.026s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.062s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::odom_callback(px4_msgs::msg::VehicleOdometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[14.063s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:188:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x_[m[K’ was not declared in this scope
+[14.063s]   188 |         [01;31m[Kcurrent_x_[m[K = msg->position[0];
+[14.064s]       |         [01;31m[K^~~~~~~~~~[m[K
+[14.090s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:189:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y_[m[K’ was not declared in this scope
+[14.091s]   189 |         [01;31m[Kcurrent_y_[m[K = msg->position[1];
+[14.091s]       |         [01;31m[K^~~~~~~~~~[m[K
+[14.120s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:190:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_z_[m[K’ was not declared in this scope
+[14.121s]   190 |         [01;31m[Kcurrent_z_[m[K = msg->position[2];
+[14.121s]       |         [01;31m[K^~~~~~~~~~[m[K
+[14.161s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:194:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kyaw_initialized_[m[K’ was not declared in this scope
+[14.162s]   194 |         if (![01;31m[Kyaw_initialized_[m[K) {
+[14.163s]       |              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[14.192s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:195:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitial_yaw_[m[K’ was not declared in this scope
+[14.194s]   195 |             [01;31m[Kinitial_yaw_[m[K = yaw;
+[14.195s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[23.652s] gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:76: CMakeFiles/offboard_control.dir/src/offboard_control.cpp.o] Error 1
+[23.653s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/offboard_control.dir/all] Error 2
+[23.654s] gmake: *** [Makefile:146: all] Error 2
+[23.664s] Invoked command in '/home/cone/ws_offboard_control/build/px4_offboard_control' returned '2': CMAKE_PREFIX_PATH=/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/cone/ws_offboard_control/build/px4_offboard_control -- -j4 -l4

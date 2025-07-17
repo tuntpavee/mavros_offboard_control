@@ -1,0 +1,29 @@
+[0.072s] Invoking command in '/home/cone/ws_offboard_control/build/px4_offboard_control': CMAKE_PREFIX_PATH=/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/cone/ws_offboard_control/build/px4_offboard_control -- -j4 -l4
+[0.302s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[0.388s] [ 50%] Built target offboard_control_default
+[0.419s] [ 75%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/offboard_control.cpp.o[0m
+[43.199s] [100%] [32m[1mLinking CXX executable offboard_control[0m
+[45.948s] [100%] Built target offboard_control
+[45.995s] Invoked command in '/home/cone/ws_offboard_control/build/px4_offboard_control' returned '0': CMAKE_PREFIX_PATH=/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/cone/ws_offboard_control/build/px4_offboard_control -- -j4 -l4
+[46.042s] Invoking command in '/home/cone/ws_offboard_control/build/px4_offboard_control': CMAKE_PREFIX_PATH=/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble /usr/bin/cmake --install /home/cone/ws_offboard_control/build/px4_offboard_control
+[46.074s] -- Install configuration: ""
+[46.076s] -- Execute custom install script
+[46.078s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/lib/px4_offboard_control/offboard_control
+[46.080s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/lib/px4_offboard_control/offboard_control_default
+[46.082s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/ament_index/resource_index/package_run_dependencies/px4_offboard_control
+[46.083s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/ament_index/resource_index/parent_prefix_path/px4_offboard_control
+[46.085s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/environment/ament_prefix_path.sh
+[46.086s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/environment/ament_prefix_path.dsv
+[46.087s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/environment/path.sh
+[46.088s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/environment/path.dsv
+[46.089s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/local_setup.bash
+[46.090s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/local_setup.sh
+[46.091s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/local_setup.zsh
+[46.093s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/local_setup.dsv
+[46.093s] -- Symlinking: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/package.dsv
+[46.131s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/ament_index/resource_index/packages/px4_offboard_control
+[46.132s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[46.133s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/cmake/px4_offboard_controlConfig.cmake
+[46.134s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/cmake/px4_offboard_controlConfig-version.cmake
+[46.135s] -- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/package.xml
+[46.143s] Invoked command in '/home/cone/ws_offboard_control/build/px4_offboard_control' returned '0': CMAKE_PREFIX_PATH=/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble /usr/bin/cmake --install /home/cone/ws_offboard_control/build/px4_offboard_control

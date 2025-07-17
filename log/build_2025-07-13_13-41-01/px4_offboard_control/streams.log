@@ -1,0 +1,50 @@
+[0.070s] Invoking command in '/home/cone/ws_offboard_control/build/px4_offboard_control': CMAKE_PREFIX_PATH=/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/cone/ws_offboard_control/build/px4_offboard_control -- -j4 -l4
+[0.203s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.827s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.863s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.080s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.092s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.120s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.164s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.224s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.370s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.376s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.640s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.854s] -- Found px4_msgs: 2.0.1 (/home/cone/ws_offboard_control/install/px4_msgs/share/px4_msgs/cmake)
+[2.905s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[2.977s] -- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.992s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.997s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.353s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.455s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.838s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.839s] -- Configured cppcheck include dirs: /home/cone/ws_offboard_control/src/px4_offboard_control/include
+[3.840s] -- Configured cppcheck exclude dirs and/or files: 
+[3.845s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.853s] -- Added test 'lint_cmake' to check CMake code style
+[3.858s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.889s] -- Added test 'uncrustify' to check C / C++ code style
+[3.890s] -- Configured uncrustify additional arguments: 
+[3.895s] -- Added test 'xmllint' to check XML markup files
+[3.905s] -- Configuring done
+[4.026s] -- Generating done
+[4.061s] -- Build files have been written to: /home/cone/ws_offboard_control/build/px4_offboard_control
+[4.195s] [35m[1mConsolidate compiler generated dependencies of target offboard_control_default[0m
+[4.196s] [35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[4.201s] [35m[1mConsolidate compiler generated dependencies of target get_pose[0m
+[4.302s] [ 16%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/offboard_control.cpp.o[0m
+[4.307s] [ 50%] [32mBuilding CXX object CMakeFiles/offboard_control_default.dir/src/offboard_control_default.cpp.o[0m
+[4.307s] [ 50%] [32mBuilding CXX object CMakeFiles/get_pose.dir/src/get_pose.cpp.o[0m
+[4.361s] [01m[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control_default.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/msg/offboard_control_mode.hpp: No such file or directory
+[4.362s]     1 | #include [01;31m[K<px4_msgs/msg/offboard_control_mode.hpp>[m[K
+[4.362s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.363s] compilation terminated.
+[4.372s] gmake[2]: *** [CMakeFiles/offboard_control_default.dir/build.make:76: CMakeFiles/offboard_control_default.dir/src/offboard_control_default.cpp.o] Error 1
+[4.373s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/offboard_control_default.dir/all] Error 2
+[4.373s] gmake[1]: *** Waiting for unfinished jobs....
+[43.440s] [ 66%] [32m[1mLinking CXX executable get_pose[0m
+[45.923s] [ 66%] Built target get_pose
+[49.197s] [ 83%] [32m[1mLinking CXX executable offboard_control[0m
+[51.857s] [ 83%] Built target offboard_control
+[51.862s] gmake: *** [Makefile:146: all] Error 2
+[51.870s] Invoked command in '/home/cone/ws_offboard_control/build/px4_offboard_control' returned '2': CMAKE_PREFIX_PATH=/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble /usr/bin/cmake --build /home/cone/ws_offboard_control/build/px4_offboard_control -- -j4 -l4

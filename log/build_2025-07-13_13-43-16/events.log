@@ -1,0 +1,112 @@
+[0.000000] (-) TimerEvent: {}
+[0.001631] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.002187] (px4_offboard_control) JobQueued: {'identifier': 'px4_offboard_control', 'dependencies': OrderedDict([('px4_msgs', '/home/cone/ws_offboard_control/install/px4_msgs')])}
+[0.002307] (px4_offboard_control) JobStarted: {'identifier': 'px4_offboard_control'}
+[0.057745] (px4_offboard_control) JobProgress: {'identifier': 'px4_offboard_control', 'progress': 'cmake'}
+[0.060944] (px4_offboard_control) JobProgress: {'identifier': 'px4_offboard_control', 'progress': 'build'}
+[0.064195] (px4_offboard_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cone/ws_offboard_control/build/px4_offboard_control', '--', '-j4', '-l4'], 'cwd': '/home/cone/ws_offboard_control/build/px4_offboard_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cone'), ('SSH_CLIENT', '10.26.3.180 39570 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cone/ws_offboard_control/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cone'), ('OLDPWD', '/home/cone'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/cone/ws_offboard_control/install:/home/cone/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cone'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cone/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/cone/ros2_ws/install/my_camera_pkg:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ws_offboard_control/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/cone/ws_offboard_control/build/px4_offboard_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.26.3.180 39570 10.26.14.118 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cone/ros2_ws/install/my_camera_pkg/lib/python3.10/site-packages:/home/cone/ws_offboard_control/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099006] (-) TimerEvent: {}
+[0.199734] (-) TimerEvent: {}
+[0.200433] (px4_offboard_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299892] (-) TimerEvent: {}
+[0.400691] (-) TimerEvent: {}
+[0.501549] (-) TimerEvent: {}
+[0.602218] (-) TimerEvent: {}
+[0.702932] (-) TimerEvent: {}
+[0.803684] (-) TimerEvent: {}
+[0.822034] (px4_offboard_control) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.857087] (px4_offboard_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.903844] (-) TimerEvent: {}
+[1.004505] (-) TimerEvent: {}
+[1.073562] (px4_offboard_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.085910] (px4_offboard_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.104691] (-) TimerEvent: {}
+[1.113142] (px4_offboard_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.157220] (px4_offboard_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.204869] (-) TimerEvent: {}
+[1.214360] (px4_offboard_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.305051] (-) TimerEvent: {}
+[1.359944] (px4_offboard_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.366634] (px4_offboard_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.405266] (-) TimerEvent: {}
+[1.505919] (-) TimerEvent: {}
+[1.606582] (-) TimerEvent: {}
+[1.707287] (-) TimerEvent: {}
+[1.808038] (-) TimerEvent: {}
+[1.908735] (-) TimerEvent: {}
+[2.009407] (-) TimerEvent: {}
+[2.110085] (-) TimerEvent: {}
+[2.210729] (-) TimerEvent: {}
+[2.311397] (-) TimerEvent: {}
+[2.412064] (-) TimerEvent: {}
+[2.512721] (-) TimerEvent: {}
+[2.613615] (-) TimerEvent: {}
+[2.627867] (px4_offboard_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.713786] (-) TimerEvent: {}
+[2.814539] (-) TimerEvent: {}
+[2.839740] (px4_offboard_control) StdoutLine: {'line': b'-- Found px4_msgs: 2.0.1 (/home/cone/ws_offboard_control/install/px4_msgs/share/px4_msgs/cmake)\n'}
+[2.890967] (px4_offboard_control) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.914762] (-) TimerEvent: {}
+[2.961971] (px4_offboard_control) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.13 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.976601] (px4_offboard_control) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.982135] (px4_offboard_control) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.014889] (-) TimerEvent: {}
+[3.115588] (-) TimerEvent: {}
+[3.216261] (-) TimerEvent: {}
+[3.316975] (-) TimerEvent: {}
+[3.334626] (px4_offboard_control) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.417143] (-) TimerEvent: {}
+[3.436681] (px4_offboard_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.517400] (-) TimerEvent: {}
+[3.618398] (-) TimerEvent: {}
+[3.719160] (-) TimerEvent: {}
+[3.820176] (-) TimerEvent: {}
+[3.820799] (px4_offboard_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.822044] (px4_offboard_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/cone/ws_offboard_control/src/px4_offboard_control/include\n'}
+[3.822536] (px4_offboard_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.827533] (px4_offboard_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.836425] (px4_offboard_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.841644] (px4_offboard_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.872609] (px4_offboard_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.873241] (px4_offboard_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.877894] (px4_offboard_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.886778] (px4_offboard_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.920334] (-) TimerEvent: {}
+[4.001952] (px4_offboard_control) StdoutLine: {'line': b'-- Generating done\n'}
+[4.020520] (-) TimerEvent: {}
+[4.034613] (px4_offboard_control) StdoutLine: {'line': b'-- Build files have been written to: /home/cone/ws_offboard_control/build/px4_offboard_control\n'}
+[4.120821] (-) TimerEvent: {}
+[4.164441] (px4_offboard_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target offboard_control\x1b[0m\n'}
+[4.165270] (px4_offboard_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target get_pose\x1b[0m\n'}
+[4.221005] (-) TimerEvent: {}
+[4.270723] (px4_offboard_control) StdoutLine: {'line': b'[ 50%] Built target offboard_control\n'}
+[4.271968] (px4_offboard_control) StdoutLine: {'line': b'[100%] Built target get_pose\n'}
+[4.315782] (px4_offboard_control) CommandEnded: {'returncode': 0}
+[4.317970] (px4_offboard_control) JobProgress: {'identifier': 'px4_offboard_control', 'progress': 'install'}
+[4.321138] (-) TimerEvent: {}
+[4.355036] (px4_offboard_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cone/ws_offboard_control/build/px4_offboard_control'], 'cwd': '/home/cone/ws_offboard_control/build/px4_offboard_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cone'), ('SSH_CLIENT', '10.26.3.180 39570 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cone/ws_offboard_control/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cone'), ('OLDPWD', '/home/cone'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/cone/ws_offboard_control/install:/home/cone/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cone'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cone/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/cone/ros2_ws/install/my_camera_pkg:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ws_offboard_control/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/cone/ws_offboard_control/build/px4_offboard_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.26.3.180 39570 10.26.14.118 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cone/ros2_ws/install/my_camera_pkg/lib/python3.10/site-packages:/home/cone/ws_offboard_control/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble')]), 'shell': False}
+[4.391162] (px4_offboard_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.393070] (px4_offboard_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.395526] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/lib/px4_offboard_control/offboard_control\n'}
+[4.396142] (px4_offboard_control) StdoutLine: {'line': b'-- Symlinking: /home/cone/ws_offboard_control/install/px4_offboard_control/lib/px4_offboard_control/get_pose\n'}
+[4.421454] (-) TimerEvent: {}
+[4.433740] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/ament_index/resource_index/package_run_dependencies/px4_offboard_control\n'}
+[4.441788] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/ament_index/resource_index/parent_prefix_path/px4_offboard_control\n'}
+[4.443097] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/environment/ament_prefix_path.sh\n'}
+[4.444436] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/environment/ament_prefix_path.dsv\n'}
+[4.445722] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/environment/path.sh\n'}
+[4.447325] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/environment/path.dsv\n'}
+[4.448777] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/local_setup.bash\n'}
+[4.450336] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/local_setup.sh\n'}
+[4.451820] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/local_setup.zsh\n'}
+[4.453389] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/local_setup.dsv\n'}
+[4.454511] (px4_offboard_control) StdoutLine: {'line': b'-- Symlinking: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/package.dsv\n'}
+[4.498650] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/ament_index/resource_index/packages/px4_offboard_control\n'}
+[4.499772] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.500910] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/cmake/px4_offboard_controlConfig.cmake\n'}
+[4.502212] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/cmake/px4_offboard_controlConfig-version.cmake\n'}
+[4.503804] (px4_offboard_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/cone/ws_offboard_control/install/px4_offboard_control/share/px4_offboard_control/package.xml\n'}
+[4.512665] (px4_offboard_control) CommandEnded: {'returncode': 0}
+[4.521567] (-) TimerEvent: {}
+[4.602437] (px4_offboard_control) JobEnded: {'identifier': 'px4_offboard_control', 'rc': 0}
+[4.605349] (-) EventReactorShutdown: {}

@@ -1,0 +1,419 @@
+[0.000000] (-) TimerEvent: {}
+[0.002117] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.003146] (px4_offboard_control) JobQueued: {'identifier': 'px4_offboard_control', 'dependencies': OrderedDict([('px4_msgs', '/home/cone/ws_offboard_control/install/px4_msgs')])}
+[0.003402] (px4_offboard_control) JobStarted: {'identifier': 'px4_offboard_control'}
+[0.065888] (px4_offboard_control) JobProgress: {'identifier': 'px4_offboard_control', 'progress': 'cmake'}
+[0.070359] (px4_offboard_control) JobProgress: {'identifier': 'px4_offboard_control', 'progress': 'build'}
+[0.074811] (px4_offboard_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cone/ws_offboard_control/build/px4_offboard_control', '--', '-j4', '-l4'], 'cwd': '/home/cone/ws_offboard_control/build/px4_offboard_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cone'), ('SSH_CLIENT', '10.26.15.108 49279 22'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cone/ws_offboard_control/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/cone'), ('OLDPWD', '/home/cone'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'th_TH.UTF-8'), ('LC_CTYPE', 'UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/cone/ws_offboard_control/install:/home/cone/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cone'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cone/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/cone/ros2_ws/install/my_camera_pkg:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ws_offboard_control/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('PWD', '/home/cone/ws_offboard_control/build/px4_offboard_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.26.15.108 49279 10.26.14.118 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cone/ros2_ws/install/my_camera_pkg/lib/python3.10/site-packages:/home/cone/ws_offboard_control/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/cone/ws_offboard_control/install/px4_msgs:/home/cone/ws_offboard_control/install/px4_offboard_control:/home/cone/ros2_ws/install/my_camera_pkg:/opt/ros/humble')]), 'shell': False}
+[0.098378] (-) TimerEvent: {}
+[0.199111] (-) TimerEvent: {}
+[0.289914] (px4_offboard_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target offboard_control\x1b[0m\n'}
+[0.299361] (-) TimerEvent: {}
+[0.358736] (px4_offboard_control) StdoutLine: {'line': b'[ 50%] Built target offboard_control_default\n'}
+[0.399625] (-) TimerEvent: {}
+[0.403992] (px4_offboard_control) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/offboard_control.dir/src/offboard_control.cpp.o\x1b[0m\n'}
+[0.499880] (-) TimerEvent: {}
+[0.600671] (-) TimerEvent: {}
+[0.701374] (-) TimerEvent: {}
+[0.802143] (-) TimerEvent: {}
+[0.902907] (-) TimerEvent: {}
+[1.003632] (-) TimerEvent: {}
+[1.104450] (-) TimerEvent: {}
+[1.205233] (-) TimerEvent: {}
+[1.306006] (-) TimerEvent: {}
+[1.406932] (-) TimerEvent: {}
+[1.507915] (-) TimerEvent: {}
+[1.608886] (-) TimerEvent: {}
+[1.709791] (-) TimerEvent: {}
+[1.810609] (-) TimerEvent: {}
+[1.911573] (-) TimerEvent: {}
+[2.012600] (-) TimerEvent: {}
+[2.113589] (-) TimerEvent: {}
+[2.214477] (-) TimerEvent: {}
+[2.315215] (-) TimerEvent: {}
+[2.415943] (-) TimerEvent: {}
+[2.516658] (-) TimerEvent: {}
+[2.617382] (-) TimerEvent: {}
+[2.718099] (-) TimerEvent: {}
+[2.818914] (-) TimerEvent: {}
+[2.919726] (-) TimerEvent: {}
+[3.020685] (-) TimerEvent: {}
+[3.121748] (-) TimerEvent: {}
+[3.222577] (-) TimerEvent: {}
+[3.323364] (-) TimerEvent: {}
+[3.424273] (-) TimerEvent: {}
+[3.525096] (-) TimerEvent: {}
+[3.625920] (-) TimerEvent: {}
+[3.726972] (-) TimerEvent: {}
+[3.828101] (-) TimerEvent: {}
+[3.929271] (-) TimerEvent: {}
+[4.030254] (-) TimerEvent: {}
+[4.131130] (-) TimerEvent: {}
+[4.232077] (-) TimerEvent: {}
+[4.332932] (-) TimerEvent: {}
+[4.433745] (-) TimerEvent: {}
+[4.534538] (-) TimerEvent: {}
+[4.635466] (-) TimerEvent: {}
+[4.736329] (-) TimerEvent: {}
+[4.837145] (-) TimerEvent: {}
+[4.937926] (-) TimerEvent: {}
+[5.038708] (-) TimerEvent: {}
+[5.139504] (-) TimerEvent: {}
+[5.240361] (-) TimerEvent: {}
+[5.341159] (-) TimerEvent: {}
+[5.441917] (-) TimerEvent: {}
+[5.542665] (-) TimerEvent: {}
+[5.643448] (-) TimerEvent: {}
+[5.744271] (-) TimerEvent: {}
+[5.845039] (-) TimerEvent: {}
+[5.945823] (-) TimerEvent: {}
+[6.046711] (-) TimerEvent: {}
+[6.147532] (-) TimerEvent: {}
+[6.248371] (-) TimerEvent: {}
+[6.349229] (-) TimerEvent: {}
+[6.450030] (-) TimerEvent: {}
+[6.550892] (-) TimerEvent: {}
+[6.651684] (-) TimerEvent: {}
+[6.752565] (-) TimerEvent: {}
+[6.853402] (-) TimerEvent: {}
+[6.954330] (-) TimerEvent: {}
+[7.055192] (-) TimerEvent: {}
+[7.155988] (-) TimerEvent: {}
+[7.256833] (-) TimerEvent: {}
+[7.357601] (-) TimerEvent: {}
+[7.458550] (-) TimerEvent: {}
+[7.559672] (-) TimerEvent: {}
+[7.660501] (-) TimerEvent: {}
+[7.761297] (-) TimerEvent: {}
+[7.862072] (-) TimerEvent: {}
+[7.962936] (-) TimerEvent: {}
+[8.064011] (-) TimerEvent: {}
+[8.165223] (-) TimerEvent: {}
+[8.266188] (-) TimerEvent: {}
+[8.367001] (-) TimerEvent: {}
+[8.467861] (-) TimerEvent: {}
+[8.568668] (-) TimerEvent: {}
+[8.669489] (-) TimerEvent: {}
+[8.770316] (-) TimerEvent: {}
+[8.871142] (-) TimerEvent: {}
+[8.971992] (-) TimerEvent: {}
+[9.072834] (-) TimerEvent: {}
+[9.173915] (-) TimerEvent: {}
+[9.274689] (-) TimerEvent: {}
+[9.375471] (-) TimerEvent: {}
+[9.476312] (-) TimerEvent: {}
+[9.577102] (-) TimerEvent: {}
+[9.677923] (-) TimerEvent: {}
+[9.778752] (-) TimerEvent: {}
+[9.879830] (-) TimerEvent: {}
+[9.980889] (-) TimerEvent: {}
+[10.081953] (-) TimerEvent: {}
+[10.183107] (-) TimerEvent: {}
+[10.284193] (-) TimerEvent: {}
+[10.385038] (-) TimerEvent: {}
+[10.485875] (-) TimerEvent: {}
+[10.586698] (-) TimerEvent: {}
+[10.687507] (-) TimerEvent: {}
+[10.788371] (-) TimerEvent: {}
+[10.889187] (-) TimerEvent: {}
+[10.989990] (-) TimerEvent: {}
+[11.090899] (-) TimerEvent: {}
+[11.192283] (-) TimerEvent: {}
+[11.293521] (-) TimerEvent: {}
+[11.394780] (-) TimerEvent: {}
+[11.495948] (-) TimerEvent: {}
+[11.596973] (-) TimerEvent: {}
+[11.697784] (-) TimerEvent: {}
+[11.798579] (-) TimerEvent: {}
+[11.899483] (-) TimerEvent: {}
+[12.000673] (-) TimerEvent: {}
+[12.101699] (-) TimerEvent: {}
+[12.202847] (-) TimerEvent: {}
+[12.303903] (-) TimerEvent: {}
+[12.387223] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KOffboardControl::OffboardControl()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.388116] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_control_mode_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.388643] (px4_offboard_control) StderrLine: {'line': b'   26 |         \x1b[01;31m\x1b[Koffboard_control_mode_publisher_\x1b[m\x1b[K = this->create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode", 10);\n'}
+[12.389108] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.404084] (-) TimerEvent: {}
+[12.458049] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:27:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrajectory_setpoint_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.458737] (px4_offboard_control) StderrLine: {'line': b'   27 |         \x1b[01;31m\x1b[Ktrajectory_setpoint_publisher_\x1b[m\x1b[K = this->create_publisher<TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 10);\n'}
+[12.459221] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.504260] (-) TimerEvent: {}
+[12.515388] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:28:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvehicle_command_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.516160] (px4_offboard_control) StderrLine: {'line': b'   28 |         \x1b[01;31m\x1b[Kvehicle_command_publisher_\x1b[m\x1b[K = this->create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 10);\n'}
+[12.516661] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.550960] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.551662] (px4_offboard_control) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[Kodom_sub_\x1b[m\x1b[K = this->create_subscription<VehicleOdometry>(\n'}
+[12.552253] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.604447] (-) TimerEvent: {}
+[12.705232] (-) TimerEvent: {}
+[12.786230] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:35:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_wp_index_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.787026] (px4_offboard_control) StderrLine: {'line': b'   35 |         \x1b[01;31m\x1b[Kcurrent_wp_index_\x1b[m\x1b[K = 0;\n'}
+[12.787585] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.805411] (-) TimerEvent: {}
+[12.835172] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:36:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.836092] (px4_offboard_control) StderrLine: {'line': b'   36 |         \x1b[01;31m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K = 0;\n'}
+[12.836716] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.856555] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:38:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktimer_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.857251] (px4_offboard_control) StderrLine: {'line': b'   38 |         \x1b[01;31m\x1b[Ktimer_\x1b[m\x1b[K = this->create_wall_timer(100ms, std::bind(&OffboardControl::timer_callback, this));\n'}
+[12.857761] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[12.858235] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ktimer_t\x1b[m\x1b[K\n'}
+[12.905621] (-) TimerEvent: {}
+[12.914767] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::adjust_position(float, float, float, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.915597] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:47:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.916252] (px4_offboard_control) StderrLine: {'line': b'   47 |         \x1b[01;31m\x1b[Kwaypoints_\x1b[m\x1b[K.push_back({x, y, z, yaw});\n'}
+[12.916734] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.963944] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.964890] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:59:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.965454] (px4_offboard_control) StderrLine: {'line': b'   59 |         if (\x1b[01;31m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K == 10) {\n'}
+[12.965871] (px4_offboard_control) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.005837] (-) TimerEvent: {}
+[13.014422] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:67:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.015240] (px4_offboard_control) StderrLine: {'line': b'   67 |         \x1b[01;31m\x1b[Koffboard_setpoint_counter_\x1b[m\x1b[K++;\n'}
+[13.016065] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.072088] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::publish_offboard_control_mode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.072916] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:79:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koffboard_control_mode_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.073762] (px4_offboard_control) StderrLine: {'line': b'   79 |         \x1b[01;31m\x1b[Koffboard_control_mode_publisher_\x1b[m\x1b[K->publish(msg);\n'}
+[13.076134] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.106135] (-) TimerEvent: {}
+[13.114315] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::publish_trajectory_setpoint()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.115233] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:91:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyaw_initialized_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.115901] (px4_offboard_control) StderrLine: {'line': b'   91 |         if (!\x1b[01;31m\x1b[Kyaw_initialized_\x1b[m\x1b[K || waypoints_.empty()) return;\n'}
+[13.116529] (px4_offboard_control) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.142070] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:91:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.143086] (px4_offboard_control) StderrLine: {'line': b'   91 |         if (!yaw_initialized_ || \x1b[01;31m\x1b[Kwaypoints_\x1b[m\x1b[K.empty()) return;\n'}
+[13.143940] (px4_offboard_control) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.184214] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:96:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_wp_index_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.185099] (px4_offboard_control) StderrLine: {'line': b'   96 |         if (\x1b[01;31m\x1b[Kcurrent_wp_index_\x1b[m\x1b[K < waypoints_.size()) {\n'}
+[13.185711] (px4_offboard_control) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.206315] (-) TimerEvent: {}
+[13.211851] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:96:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwaypoints_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.212664] (px4_offboard_control) StderrLine: {'line': b'   96 |         if (current_wp_index_ < \x1b[01;31m\x1b[Kwaypoints_\x1b[m\x1b[K.size()) {\n'}
+[13.213244] (px4_offboard_control) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.242781] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:98:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitial_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.244576] (px4_offboard_control) StderrLine: {'line': b'   98 | o pos = transform_position_relative_to_yaw(wp[0], wp[1], wp[2], \x1b[01;31m\x1b[Kinitial_yaw_\x1b[m\x1b[K);\n'}
+[13.245182] (px4_offboard_control) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.245788] (px4_offboard_control) StderrLine: {'line': b'\n'}
+[13.246328] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:99:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.246873] (px4_offboard_control) StderrLine: {'line': b'   99 |             msg.position = {pos[0], pos[1], pos[2]\x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[13.247508] (px4_offboard_control) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.248207] (px4_offboard_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[13.248815] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[13.249330] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[13.249934] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[13.250600] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cone/ws_offboard_control/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[13.251156] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cone/ws_offboard_control/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[13.251730] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:1\x1b[m\x1b[K:\n'}
+[13.252468] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.253317] (px4_offboard_control) StderrLine: {'line': b'   95 |     struct \x1b[01;36m\x1b[Karray\x1b[m\x1b[K\n'}
+[13.254146] (px4_offboard_control) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.254858] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<float, 3>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.255402] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.255783] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.273156] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:103:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_x_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcurrent_yaw\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.274503] (px4_offboard_control) StderrLine: {'line': b'  103 |             float dx = \x1b[01;31m\x1b[Kcurrent_x_\x1b[m\x1b[K - pos[0];\n'}
+[13.275301] (px4_offboard_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.275965] (px4_offboard_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Kcurrent_yaw\x1b[m\x1b[K\n'}
+[13.300650] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:104:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcurrent_yaw\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.301561] (px4_offboard_control) StderrLine: {'line': b'  104 |             float dy = \x1b[01;31m\x1b[Kcurrent_y_\x1b[m\x1b[K - pos[1];\n'}
+[13.302148] (px4_offboard_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.302604] (px4_offboard_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Kcurrent_yaw\x1b[m\x1b[K\n'}
+[13.306499] (-) TimerEvent: {}
+[13.328848] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:105:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_z_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcurrent_yaw\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.329956] (px4_offboard_control) StderrLine: {'line': b'  105 |             float dz = \x1b[01;31m\x1b[Kcurrent_z_\x1b[m\x1b[K - pos[2];\n'}
+[13.330574] (px4_offboard_control) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.331298] (px4_offboard_control) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Kcurrent_yaw\x1b[m\x1b[K\n'}
+[13.362289] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:111:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kis_hovering_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.363083] (px4_offboard_control) StderrLine: {'line': b'  111 |                 if (!\x1b[01;31m\x1b[Kis_hovering_\x1b[m\x1b[K) {\n'}
+[13.363622] (px4_offboard_control) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.399934] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:112:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khover_start_time_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.400625] (px4_offboard_control) StderrLine: {'line': b'  112 |                     \x1b[01;31m\x1b[Khover_start_time_\x1b[m\x1b[K = this->now();\n'}
+[13.401130] (px4_offboard_control) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.406686] (-) TimerEvent: {}
+[13.440362] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:117:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khover_start_time_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.441144] (px4_offboard_control) StderrLine: {'line': b'  117 |                 auto hover_elapsed = this->now() - \x1b[01;31m\x1b[Khover_start_time_\x1b[m\x1b[K;\n'}
+[13.441656] (px4_offboard_control) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.474259] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:124:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kis_hovering_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.475205] (px4_offboard_control) StderrLine: {'line': b'  124 |                     \x1b[01;31m\x1b[Kis_hovering_\x1b[m\x1b[K = false;\n'}
+[13.475755] (px4_offboard_control) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.506873] (-) TimerEvent: {}
+[13.512528] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:125:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyaw_change_hold_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.513381] (px4_offboard_control) StderrLine: {'line': b'  125 |                     \x1b[01;31m\x1b[Kyaw_change_hold_\x1b[m\x1b[K = false;\n'}
+[13.515855] (px4_offboard_control) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.545942] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:126:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprevious_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.546929] (px4_offboard_control) StderrLine: {'line': b'  126 |                     \x1b[01;31m\x1b[Kprevious_yaw_\x1b[m\x1b[K = current_yaw;\n'}
+[13.547615] (px4_offboard_control) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.580729] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:130:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprevious_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.581656] (px4_offboard_control) StderrLine: {'line': b'  130 |                 if (std::abs(current_yaw - \x1b[01;31m\x1b[Kprevious_yaw_\x1b[m\x1b[K) > 0.1f) {\n'}
+[13.582282] (px4_offboard_control) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.607048] (-) TimerEvent: {}
+[13.618709] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:131:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyaw_change_hold_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.619586] (px4_offboard_control) StderrLine: {'line': b'  131 |                     if (!\x1b[01;31m\x1b[Kyaw_change_hold_\x1b[m\x1b[K) {\n'}
+[13.620274] (px4_offboard_control) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.662669] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:132:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyaw_hold_start_time_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.663460] (px4_offboard_control) StderrLine: {'line': b'  132 |                         \x1b[01;31m\x1b[Kyaw_hold_start_time_\x1b[m\x1b[K = this->now();\n'}
+[13.664075] (px4_offboard_control) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.707247] (-) TimerEvent: {}
+[13.709001] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:137:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyaw_hold_start_time_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.709890] (px4_offboard_control) StderrLine: {'line': b'  137 |                     if ((this->now() - \x1b[01;31m\x1b[Kyaw_hold_start_time_\x1b[m\x1b[K) < YAW_HOLD_DURATION) {\n'}
+[13.710509] (px4_offboard_control) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.762761] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:138:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrajectory_setpoint_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.763581] (px4_offboard_control) StderrLine: {'line': b'  138 |                         \x1b[01;31m\x1b[Ktrajectory_setpoint_publisher_\x1b[m\x1b[K->publish(msg);\n'}
+[13.764255] (px4_offboard_control) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.800727] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:141:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyaw_change_hold_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.801544] (px4_offboard_control) StderrLine: {'line': b'  141 |                         \x1b[01;31m\x1b[Kyaw_change_hold_\x1b[m\x1b[K = false;\n'}
+[13.802101] (px4_offboard_control) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.807435] (-) TimerEvent: {}
+[13.854840] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:145:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrajectory_setpoint_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.855753] (px4_offboard_control) StderrLine: {'line': b'  145 |                 \x1b[01;31m\x1b[Ktrajectory_setpoint_publisher_\x1b[m\x1b[K->publish(msg);\n'}
+[13.856422] (px4_offboard_control) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.885778] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:148:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kis_hovering_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.886656] (px4_offboard_control) StderrLine: {'line': b'  148 |                 \x1b[01;31m\x1b[Kis_hovering_\x1b[m\x1b[K = false;\n'}
+[13.887234] (px4_offboard_control) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.907622] (-) TimerEvent: {}
+[13.917406] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:152:86:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitial_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.918337] (px4_offboard_control) StderrLine: {'line': b'  152 | = transform_position_relative_to_yaw(last[0], last[1], last[2], \x1b[01;31m\x1b[Kinitial_yaw_\x1b[m\x1b[K);\n'}
+[13.918927] (px4_offboard_control) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.919319] (px4_offboard_control) StderrLine: {'line': b'\n'}
+[13.919695] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:153:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.920331] (px4_offboard_control) StderrLine: {'line': b'  153 |             msg.position = {pos[0], pos[1], pos[2]\x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[13.920919] (px4_offboard_control) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.921576] (px4_offboard_control) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[13.922125] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:54\x1b[m\x1b[K,\n'}
+[13.922721] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[13.923268] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[13.923813] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cone/ws_offboard_control/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8\x1b[m\x1b[K,\n'}
+[13.924577] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cone/ws_offboard_control/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp:7\x1b[m\x1b[K,\n'}
+[13.925270] (px4_offboard_control) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:1\x1b[m\x1b[K:\n'}
+[13.925867] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.926472] (px4_offboard_control) StderrLine: {'line': b'   95 |     struct \x1b[01;36m\x1b[Karray\x1b[m\x1b[K\n'}
+[13.927038] (px4_offboard_control) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.927728] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<float, 3>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.928513] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.929115] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<brace-enclosed initializer list>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.973264] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:157:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrajectory_setpoint_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.974316] (px4_offboard_control) StderrLine: {'line': b'  157 |         \x1b[01;31m\x1b[Ktrajectory_setpoint_publisher_\x1b[m\x1b[K->publish(msg);\n'}
+[13.975474] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.007917] (-) TimerEvent: {}
+[14.024096] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::publish_vehicle_command(uint16_t, float, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.025153] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:172:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvehicle_command_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.028357] (px4_offboard_control) StderrLine: {'line': b'  172 |         \x1b[01;31m\x1b[Kvehicle_command_publisher_\x1b[m\x1b[K->publish(msg);\n'}
+[14.029268] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.064622] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OffboardControl::odom_callback(px4_msgs::msg::VehicleOdometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.065554] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:188:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_x_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.066185] (px4_offboard_control) StderrLine: {'line': b'  188 |         \x1b[01;31m\x1b[Kcurrent_x_\x1b[m\x1b[K = msg->position[0];\n'}
+[14.066784] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.092716] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:189:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_y_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.093594] (px4_offboard_control) StderrLine: {'line': b'  189 |         \x1b[01;31m\x1b[Kcurrent_y_\x1b[m\x1b[K = msg->position[1];\n'}
+[14.094259] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.108086] (-) TimerEvent: {}
+[14.122987] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:190:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_z_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.123874] (px4_offboard_control) StderrLine: {'line': b'  190 |         \x1b[01;31m\x1b[Kcurrent_z_\x1b[m\x1b[K = msg->position[2];\n'}
+[14.124497] (px4_offboard_control) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.163305] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:194:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyaw_initialized_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.164635] (px4_offboard_control) StderrLine: {'line': b'  194 |         if (!\x1b[01;31m\x1b[Kyaw_initialized_\x1b[m\x1b[K) {\n'}
+[14.165469] (px4_offboard_control) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.194118] (px4_offboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cone/ws_offboard_control/src/px4_offboard_control/src/offboard_control.cpp:195:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitial_yaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.195726] (px4_offboard_control) StderrLine: {'line': b'  195 |             \x1b[01;31m\x1b[Kinitial_yaw_\x1b[m\x1b[K = yaw;\n'}
+[14.197553] (px4_offboard_control) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.208333] (-) TimerEvent: {}
+[14.309537] (-) TimerEvent: {}
+[14.410360] (-) TimerEvent: {}
+[14.511165] (-) TimerEvent: {}
+[14.611995] (-) TimerEvent: {}
+[14.712852] (-) TimerEvent: {}
+[14.813663] (-) TimerEvent: {}
+[14.914468] (-) TimerEvent: {}
+[15.015284] (-) TimerEvent: {}
+[15.116156] (-) TimerEvent: {}
+[15.217335] (-) TimerEvent: {}
+[15.318332] (-) TimerEvent: {}
+[15.419147] (-) TimerEvent: {}
+[15.519967] (-) TimerEvent: {}
+[15.620731] (-) TimerEvent: {}
+[15.721521] (-) TimerEvent: {}
+[15.822373] (-) TimerEvent: {}
+[15.923201] (-) TimerEvent: {}
+[16.023968] (-) TimerEvent: {}
+[16.124755] (-) TimerEvent: {}
+[16.225547] (-) TimerEvent: {}
+[16.326338] (-) TimerEvent: {}
+[16.427137] (-) TimerEvent: {}
+[16.527978] (-) TimerEvent: {}
+[16.628795] (-) TimerEvent: {}
+[16.729578] (-) TimerEvent: {}
+[16.830408] (-) TimerEvent: {}
+[16.931226] (-) TimerEvent: {}
+[17.032694] (-) TimerEvent: {}
+[17.133535] (-) TimerEvent: {}
+[17.234859] (-) TimerEvent: {}
+[17.335996] (-) TimerEvent: {}
+[17.437027] (-) TimerEvent: {}
+[17.538152] (-) TimerEvent: {}
+[17.639248] (-) TimerEvent: {}
+[17.740298] (-) TimerEvent: {}
+[17.841197] (-) TimerEvent: {}
+[17.942042] (-) TimerEvent: {}
+[18.043098] (-) TimerEvent: {}
+[18.144255] (-) TimerEvent: {}
+[18.245275] (-) TimerEvent: {}
+[18.346297] (-) TimerEvent: {}
+[18.447146] (-) TimerEvent: {}
+[18.547980] (-) TimerEvent: {}
+[18.648788] (-) TimerEvent: {}
+[18.749588] (-) TimerEvent: {}
+[18.850412] (-) TimerEvent: {}
+[18.951261] (-) TimerEvent: {}
+[19.052101] (-) TimerEvent: {}
+[19.152881] (-) TimerEvent: {}
+[19.253760] (-) TimerEvent: {}
+[19.354834] (-) TimerEvent: {}
+[19.455911] (-) TimerEvent: {}
+[19.556958] (-) TimerEvent: {}
+[19.657923] (-) TimerEvent: {}
+[19.758708] (-) TimerEvent: {}
+[19.859506] (-) TimerEvent: {}
+[19.960351] (-) TimerEvent: {}
+[20.061172] (-) TimerEvent: {}
+[20.162021] (-) TimerEvent: {}
+[20.263076] (-) TimerEvent: {}
+[20.364128] (-) TimerEvent: {}
+[20.464998] (-) TimerEvent: {}
+[20.565850] (-) TimerEvent: {}
+[20.666745] (-) TimerEvent: {}
+[20.767620] (-) TimerEvent: {}
+[20.868550] (-) TimerEvent: {}
+[20.969367] (-) TimerEvent: {}
+[21.070147] (-) TimerEvent: {}
+[21.170919] (-) TimerEvent: {}
+[21.271846] (-) TimerEvent: {}
+[21.373005] (-) TimerEvent: {}
+[21.474076] (-) TimerEvent: {}
+[21.575164] (-) TimerEvent: {}
+[21.676303] (-) TimerEvent: {}
+[21.777392] (-) TimerEvent: {}
+[21.878467] (-) TimerEvent: {}
+[21.979569] (-) TimerEvent: {}
+[22.080715] (-) TimerEvent: {}
+[22.181830] (-) TimerEvent: {}
+[22.282905] (-) TimerEvent: {}
+[22.383922] (-) TimerEvent: {}
+[22.484720] (-) TimerEvent: {}
+[22.585546] (-) TimerEvent: {}
+[22.686472] (-) TimerEvent: {}
+[22.787358] (-) TimerEvent: {}
+[22.888181] (-) TimerEvent: {}
+[22.989047] (-) TimerEvent: {}
+[23.090050] (-) TimerEvent: {}
+[23.190910] (-) TimerEvent: {}
+[23.291895] (-) TimerEvent: {}
+[23.392852] (-) TimerEvent: {}
+[23.493884] (-) TimerEvent: {}
+[23.595081] (-) TimerEvent: {}
+[23.654480] (px4_offboard_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/offboard_control.dir/build.make:76: CMakeFiles/offboard_control.dir/src/offboard_control.cpp.o] Error 1\n'}
+[23.656020] (px4_offboard_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/offboard_control.dir/all] Error 2\n'}
+[23.657297] (px4_offboard_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[23.666504] (px4_offboard_control) CommandEnded: {'returncode': 2}
+[23.696573] (-) TimerEvent: {}
+[23.729222] (px4_offboard_control) JobEnded: {'identifier': 'px4_offboard_control', 'rc': 2}
+[23.741151] (-) EventReactorShutdown: {}
