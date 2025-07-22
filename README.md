@@ -7,14 +7,14 @@ Works on both **real hardware** (Pixhawk ↔ STM32 XRCE‑DDS bridge) and **Gaze
 
 ## 1. Prerequisites
 
-| Package / Tool       | Tested Version     | Notes                                |
-|----------------------|--------------------|--------------------------------------|
-| **PX4 Firmware**     | `main` (Jul 2025)  | Gazebo Classic + Ignition            |
-| **ROS 2**            | Humble Hawksbill   | Desktop + Dev tools                  |
-| **MAVROS 2**         | 2025.5.5           | `apt install ros-humble-mavros*`     |
-| **micro-ROS agent**  | 2.1                | `sudo apt install microxrcedds-agent`|
-| **QGroundControl**   | v4.3+              | For parameter sync / log download    |
-
+| Package / Tool       | Tested Version     | Notes                                          |
+|----------------------|--------------------|------------------------------------------------|
+| **PX4 Firmware**     | `main` (Jul 2025)  | Gazebo Classic + Ignition                      |
+| **ROS 2**            | Humble Hawksbill   | Desktop + Dev tools                            |
+| **MAVROS 2**         | 2025.5.5           | `apt install ros-humble-mavros*`               |
+| **micro-ROS agent**  | 2.1                | `sudo apt install microxrcedds-agent`          |
+| **QGroundControl**   | v4.3+              | For parameter sync / log download              |
+| **px4_msgs**         | `main`             | `git clone https://github.com/PX4/px4_msgs.git`|
 ---
 
 ## 2. Build the Package
