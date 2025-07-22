@@ -29,8 +29,6 @@ find_package(sensor_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(eigen3_cmake_module REQUIRED)
 
-include_directories(include)
-
 set(COMMON_DEPS
   rclcpp
   px4_msgs
@@ -60,9 +58,6 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
-install(DIRECTORY include/
-  DESTINATION include
-)
 
 ##################
 # Testing (optional)
