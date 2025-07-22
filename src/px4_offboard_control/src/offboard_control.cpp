@@ -15,7 +15,6 @@
 
 using namespace std::chrono_literals;
 using namespace px4_msgs::msg;
-
 class OffboardControl : public rclcpp::Node
 {
 public:
