@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
-[ 50%] Built target offboard_control_default
-[ 75%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/offboard_control.cpp.o[0m

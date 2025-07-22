@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/offboard_control_default.dir/src/offboard_control_default.cpp.o -o offboard_control_default 

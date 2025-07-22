@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/cone/ws_offboard_control/build/px4_offboard_control/offboard_control" "/home/cone/ws_offboard_control/build/px4_offboard_control/get_pose" "TARGETS" "offboard_control" "get_pose" "DESTINATION" "lib/px4_offboard_control")
