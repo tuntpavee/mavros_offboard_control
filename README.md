@@ -36,9 +36,9 @@ source install/setup.bash
 ### Terminal 1: MAVROS
 ```bash
 ros2 run mavros mavros_node --ros-args \
-  -p fcu_url:=/dev/ttyACM0:115200 \     # Pixhawk USB CDC
-  -p gcs_url:=udp://@ \                 # (optional) forward to QGC on same PC
-  -p target_system_id:=1               # usually 1 for Pixhawk
+  -p fcu_url:=/dev/ttyACM0:115200 \
+  -p gcs_url:=udp://@ \
+  -p target_system_id:=1
 ```
 
 ### Terminal 2: micro-ROS Agent (STM32 side)

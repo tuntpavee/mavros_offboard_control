@@ -139,7 +139,6 @@ private:
         last_pose_time_ = stamp;
 
         /* yaw */
-        yaw_enu_to_ned()
         tf2::Quaternion q(msg->pose.orientation.x,
                           msg->pose.orientation.y,
                           msg->pose.orientation.z,
