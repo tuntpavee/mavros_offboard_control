@@ -41,11 +41,16 @@ set(COMMON_DEPS
   Eigen3
 )
 
-# Offboard control node
+# *** MANUAL INCLUDE PATH FIX ***
+include_directories(${CMAKE_INSTALL_PREFIX}/include/px4_msgs)
+
+# Add your executables here
 add_executable(offboard_control src/offboard_control.cpp)
 add_executable(get_pose src/get_pose.cpp)
+add_executable(offboard_control_timer src/offboard_control_timer.cpp)
 
-foreach(target offboard_control get_pose)
+# Link dependencies to all targets
+foreach(target offboard_control get_pose offboard_control_timer)
   ament_target_dependencies(${target} ${COMMON_DEPS})
 endforeach()
 
@@ -55,9 +60,9 @@ endforeach()
 install(TARGETS
   offboard_control
   get_pose
+  offboard_control_timer
   DESTINATION lib/${PROJECT_NAME}
 )
-
 
 ##################
 # Testing (optional)
