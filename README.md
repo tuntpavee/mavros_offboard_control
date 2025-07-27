@@ -59,8 +59,8 @@ sudo usermod -aG dialout $USER && newgrp dialout
 ### Terminal 1: MAVROS (offboard setpoint bridge)
 ```bash
 ros2 run mavros mavros_node --ros-args \
-  -p fcu_url:=udp://:14540@ \          # listen for PX4 SITL UDP
-  -p gcs_url:=udp://@14550             # forward to QGC on port 14550
+  -p fcu_url:=udp://:14540@ \
+  -p gcs_url:=udp://@14550 
 ```
 
 ### Terminal 2: micro-ROS Agent (simulated DDS peer)
