@@ -21,9 +21,9 @@ public:
     OffboardControl()
         : Node("offboard_control")
     {
-        offboard_ctrl_pub_ = create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode", 10);
-        traj_sp_pub_ = create_publisher<TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 10);
-        vehicle_cmd_pub_ = create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 10);
+        offboard_ctrl_pub_ = create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode", 100);
+        traj_sp_pub_ = create_publisher<TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 100);
+        vehicle_cmd_pub_ = create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 100);
 
         odom_sub_ = create_subscription<geometry_msgs::msg::PoseStamped>(
             "/mavros/local_position/pose",
@@ -36,11 +36,12 @@ public:
     }
 
 private:
-    //param
+    // param
     static constexpr float DIST_THRESHOLD_METERS = 0.1f; // pos gate
-    static constexpr float SPEED_THRESHOLD_M_S = 0.20f; // max speed to start dwell timer
-    static constexpr double YAW_DIFF_THRESHOLD = 0.10; // rad, ≈6°
-    static constexpr double DWELL_TIME_SEC = 5.0; // yaw-dwell duration
+    static constexpr float SPEED_THRESHOLD_M_S = 0.20f;  // max speed to start dwell timer
+    static constexpr double YAW_DIFF_THRESHOLD = 0.10;   // rad, ≈6°
+    static constexpr double DWELL_TIME_SEC = 3.0;        // yaw-dwell duration
+    static constexpr double WP_TIMEOUT_SEC = 3.0;
 
     rclcpp::Publisher<OffboardControlMode>::SharedPtr offboard_ctrl_pub_;
     rclcpp::Publisher<TrajectorySetpoint>::SharedPtr traj_sp_pub_;
@@ -48,7 +49,7 @@ private:
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr odom_sub_;
     rclcpp::TimerBase::SharedPtr timer_;
 
-    //state
+    // state
     std::vector<std::array<float, 4>> waypoints_;
     size_t wp_idx_ = 0;
     uint64_t setpt_cnt_ = 0;
@@ -62,14 +63,14 @@ private:
     float init_x_ = 0, init_y_ = 0, init_z_ = 0;
     double last_cmd_yaw_ = 0.0;
 
-    //prev pose
+    // prev pose
     float last_x_ = 0, last_y_ = 0, last_z_ = 0;
     rclcpp::Time last_pose_time_{0, 0, RCL_ROS_TIME};
-
+    rclcpp::Time wp_start_time_{0, 0, RCL_ROS_TIME};
     bool in_dwell_ = false;
     rclcpp::Time dwell_start_;
 
-    //helper
+    // helper
     static double wrap_pi(double a)
     {
         while (a > M_PI)
@@ -78,11 +79,11 @@ private:
             a += 2 * M_PI;
         return a;
     }
-    static inline std::array<float,3> enu_to_ned(float xe, float ye, float ze)
+    static inline std::array<float, 3> enu_to_ned(float xe, float ye, float ze)
     {
         //  ENU:  X=East, Y=North, Z=Up
         //  NED:  X=North, Y=East, Z=Down  (positive down)
-        return { ye,  xe,  -ze };
+        return {ye, xe, -ze};
     }
 
     static inline double yaw_enu_to_ned(double yaw_enu)
@@ -114,13 +115,13 @@ private:
 
     void pose_cb(const geometry_msgs::msg::PoseStamped::SharedPtr msg)
     {
-        //get pose mavros(enu)
+        // get pose mavros(enu)
         auto ned = enu_to_ned(msg->pose.position.x, msg->pose.position.y, msg->pose.position.z);
         x_ = ned[0];
         y_ = ned[1];
         z_ = ned[2];
 
-        //cal speed
+        // cal speed
         rclcpp::Time stamp(msg->header.stamp); // convert to rclcpp::Time
         if (last_pose_time_.nanoseconds() != 0)
         {
@@ -145,7 +146,8 @@ private:
                           msg->pose.orientation.w);
         double roll, pitch;
         tf2::Matrix3x3(q).getRPY(roll, pitch, yaw_);
-        yaw_ = yaw_enu_to_ned(yaw_); 
+        yaw_ = yaw_enu_to_ned(yaw_);
+        
         if (!yaw_init_)
         {
             init_x_ = x_;
@@ -155,18 +157,21 @@ private:
             last_cmd_yaw_ = yaw_;
             yaw_init_ = true;
             RCLCPP_INFO(get_logger(),
-                    "Init ref ↗ yaw=%.1f°  pos=(%.2f,%.2f,%.2f)",
-                    init_yaw_ * 180. / M_PI, init_x_, init_y_, init_z_);
+                        "Init ref ↗ yaw=%.1f°  pos=(%.2f,%.2f,%.2f)",
+                        init_yaw_ * 180. / M_PI, init_x_, init_y_, init_z_);
         }
     }
 
-    //main
+    // main
     void loop()
     {
         if (!yaw_init_ || waypoints_.empty())
+        {
+            RCLCPP_INFO(get_logger(), "not init");
             return;
-
-        //arm after 1s
+        }
+        RCLCPP_INFO(get_logger(), "waiting..");
+        // arm after 1s
         if (setpt_cnt_ == 10)
         {
             publish_vehicle_cmd(VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
@@ -176,7 +181,6 @@ private:
 
         publish_offboard_mode();
         handle_waypoints();
-
         setpt_cnt_++;
     }
     void publish_offboard_mode()
@@ -200,7 +204,12 @@ private:
             auto pos = body_to_world(wp[0], wp[1], wp[2]);
             double cmd_yaw = init_yaw_ + wp[3];
 
-            //correct offset
+            static size_t last_wp_seen = SIZE_MAX;
+            if (last_wp_seen != wp_idx_) {
+                last_wp_seen   = wp_idx_;
+                wp_start_time_ = get_clock()->now();
+            }
+            // correct offset
             const float tgt_x = init_x_ + pos[0];
             const float tgt_y = init_y_ + pos[1];
             const float tgt_z = init_z_ + pos[2];
@@ -213,6 +222,18 @@ private:
             const float dz = z_ - tgt_z;
             float dist = std::sqrt(dx * dx + dy * dy + dz * dz);
             double yaw_diff = std::fabs(wrap_pi(cmd_yaw - last_cmd_yaw_));
+
+            if ((get_clock()->now() - wp_start_time_).seconds() > WP_TIMEOUT_SEC)
+            {
+                RCLCPP_WARN(get_logger(),
+                            "WP %zu timed‑out after %.1f s → skipping",
+                            wp_idx_, WP_TIMEOUT_SEC);
+                ++wp_idx_;
+                in_dwell_ = false;
+                /* reset timer for the new WP */
+                last_wp_seen = SIZE_MAX;
+                return; // publish current sp and wait for next loop tick
+            }
 
             if (dist < DIST_THRESHOLD_METERS)
             {
@@ -229,25 +250,17 @@ private:
                 }
                 else
                 {
-                    /* need 5-s dwell at low speed */
-                    if (speed_ < SPEED_THRESHOLD_M_S)
+                    if (!in_dwell_)
                     {
-                        if (!in_dwell_)
-                        {
-                            dwell_start_ = now();
-                            in_dwell_ = true;
-                        }
-                        if ((now() - dwell_start_).seconds() > DWELL_TIME_SEC)
-                        {
-                            RCLCPP_INFO(get_logger(), "WP %zu complete after yaw dwell", wp_idx_);
-                            wp_idx_++;
-                            last_cmd_yaw_ = cmd_yaw;
-                            in_dwell_ = false;
-                        }
+                        dwell_start_ = now();
+                        in_dwell_ = true;
                     }
-                    else
+                    if ((now() - dwell_start_).seconds() > DWELL_TIME_SEC)
                     {
-                        in_dwell_ = false; // moving again → reset timer
+                        RCLCPP_INFO(get_logger(), "WP %zu complete after yaw dwell", wp_idx_);
+                        wp_idx_++;
+                        last_cmd_yaw_ = cmd_yaw;
+                        in_dwell_ = false;
                     }
                 }
             }
@@ -256,20 +269,18 @@ private:
                 in_dwell_ = false; // outside radius → reset timer
                 RCLCPP_INFO(get_logger(), "outside radius");
             }
-            RCLCPP_INFO(get_logger(), "Current pose: x %.2f y %.2f z %.2f", x_, y_, z_);
-            RCLCPP_INFO(get_logger(), "Going to: x %.2f y %.2f z %.2f", tgt_x, tgt_y, tgt_z);
             traj_sp_pub_->publish(sp);
             return;
         }
 
-        //land
+        // land
         if (!landed_)
         {
             auto last = waypoints_.back();
             auto pos = body_to_world(last[0], last[1], 0.0f);
             const float tgt_x = init_x_ + pos[0];
             const float tgt_y = init_y_ + pos[1];
-            const float tgt_z = init_z_;    
+            const float tgt_z = init_z_;
             sp.position = {tgt_x, tgt_y, tgt_z};
             sp.yaw = init_yaw_ + last[3];
             traj_sp_pub_->publish(sp);
@@ -282,7 +293,7 @@ private:
         traj_sp_pub_->publish(sp);
     }
 
-    //load csv
+    // load csv
     void load_csv_waypoints(const std::string &path)
     {
         std::ifstream f(path);

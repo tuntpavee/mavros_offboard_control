@@ -111,7 +111,6 @@ OffboardControl::OffboardControl() : Node("offboard_control")
             arm();
         }
         ++setpt_cnt_;
-        RCLCPP_INFO(get_logger(), "Waiting...");
         publish_trajectory_setpoint(); });
 
     RCLCPP_INFO(get_logger(), "OffboardControl node started.");

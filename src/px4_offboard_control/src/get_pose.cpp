@@ -12,13 +12,17 @@ class OffboardWithMavrosPose : public rclcpp::Node
 public:
     OffboardWithMavrosPose() : Node("offboard_with_mavros_pose")
     {
-        offboard_control_mode_pub_ = this->create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode", 10);
-        trajectory_setpoint_pub_   = this->create_publisher<TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 10);
-        vehicle_command_pub_       = this->create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 10);
+        offboard_control_mode_pub_ = this->create_publisher<OffboardControlMode>("/fmu/in/offboard_control_mode", 100);
+        trajectory_setpoint_pub_   = this->create_publisher<TrajectorySetpoint>("/fmu/in/trajectory_setpoint", 100);
+        vehicle_command_pub_       = this->create_publisher<VehicleCommand>("/fmu/in/vehicle_command", 100);
 
         pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             "/mavros/local_position/pose", rclcpp::SensorDataQoS(),
             std::bind(&OffboardWithMavrosPose::pose_callback, this, std::placeholders::_1));
+
+        fmu_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+            "/fmu/out/vehicle_odometry", rclcpp::SensorDataQoS(),
+            std::bind(&OffboardWithMavrosPose::fmu_pose_callback, this, std::placeholders::_1));
 
         timer_ = this->create_wall_timer(100ms, std::bind(&OffboardWithMavrosPose::timer_callback, this));
     }
@@ -28,6 +32,7 @@ private:
     rclcpp::Publisher<TrajectorySetpoint>::SharedPtr trajectory_setpoint_pub_;
     rclcpp::Publisher<VehicleCommand>::SharedPtr vehicle_command_pub_;
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr pose_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr fmu_pose_sub_;
     rclcpp::TimerBase::SharedPtr timer_;
 
     int setpoint_counter_ = 0;
@@ -61,6 +66,12 @@ private:
         RCLCPP_INFO(this->get_logger(), "Current position (mavros): x=%.2f, y=%.2f, z=%.2f", p.x, p.y, p.z);
     }
 
+    void fmu_pose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr msg)
+    {
+        const auto &p = msg->pose.position;
+        RCLCPP_WARN(this->get_logger(), "Current position (fmu): x=%.2f, y=%.2f, z=%.2f", p.x, p.y, p.z);
+    }
+
     void publish_offboard_control_mode()
     {
         OffboardControlMode msg{};
@@ -77,7 +88,7 @@ private:
     {
         TrajectorySetpoint msg{};
         msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
-        msg.position = {0.0f, 0.0f, 4.0f};  // Target 4m altitude
+        msg.position = {0.0f, 0.0f, -4.0f};  // Target 4m altitude
         msg.yaw = 0.0f;
         trajectory_setpoint_pub_->publish(msg);
     }
