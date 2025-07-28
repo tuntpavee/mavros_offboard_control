@@ -88,7 +88,8 @@ In any new terminal (after sourcing setup.bash):
 
 ```bash
 source ~/YOUR_WS/install/setup.bash
-ros2 run px4_offboard_control offboard_control
+ros2 run px4_offboard_control offboard_control --ros-args \
+  -p csv_path:=/square.csv
 ```
 
 - Listens to `/mavros/local_position/pose` (ENU)
