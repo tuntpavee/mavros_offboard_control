@@ -32,7 +32,10 @@ public:
 
         timer_ = create_wall_timer(100ms, std::bind(&OffboardControl::loop, this));
 
-        load_csv_waypoints("src/px4_offboard_control/src/path.csv");
+        this->declare_parameter<std::string>("csv_path", "src/px4_offboard_control/src/path.csv");
+        this->get_parameter("csv_path", csv_path_);
+        RCLCPP_INFO(get_logger(), "CSV path: %s", csv_path_.c_str());
+        load_csv_waypoints(csv_path_);
     }
 
 private:
@@ -51,6 +54,7 @@ private:
 
     // state
     std::vector<std::array<float, 4>> waypoints_;
+    std::string csv_path_;
     size_t wp_idx_ = 0;
     uint64_t setpt_cnt_ = 0;
     bool landed_ = false;

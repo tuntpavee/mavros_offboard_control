@@ -69,6 +69,7 @@ private:
     // Internal state
     std::atomic<uint64_t> timestamp_;
     std::vector<Waypoint> waypoints_;
+    
     size_t current_index_;
     uint64_t setpoint_counter_;
     int ticks_;
