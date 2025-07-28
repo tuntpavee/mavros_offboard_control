@@ -26,8 +26,10 @@ find_package(tf2_ros REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(eigen3_cmake_module REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 set(COMMON_DEPS
   rclcpp
@@ -35,8 +37,10 @@ set(COMMON_DEPS
   tf2
   tf2_geometry_msgs
   tf2_ros
+  nav_msgs
   builtin_interfaces
   geometry_msgs
+  visualization_msgs
   sensor_msgs
   Eigen3
 )
@@ -48,9 +52,10 @@ include_directories(${CMAKE_INSTALL_PREFIX}/include/px4_msgs)
 add_executable(offboard_control src/offboard_control.cpp)
 add_executable(get_pose src/get_pose.cpp)
 add_executable(offboard_control_timer src/offboard_control_timer.cpp)
+add_executable(setpoint_visualizer src/setpoint_visualizer.cpp)
 
 # Link dependencies to all targets
-foreach(target offboard_control get_pose offboard_control_timer)
+foreach(target offboard_control get_pose offboard_control_timer setpoint_visualizer)
   ament_target_dependencies(${target} ${COMMON_DEPS})
 endforeach()
 
@@ -61,6 +66,7 @@ install(TARGETS
   offboard_control
   get_pose
   offboard_control_timer
+  setpoint_visualizer
   DESTINATION lib/${PROJECT_NAME}
 )
 
