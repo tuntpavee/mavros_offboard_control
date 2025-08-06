@@ -45,6 +45,8 @@ private:
     static constexpr double YAW_DIFF_THRESHOLD = 0.10;   // rad, ≈6°
     static constexpr double DWELL_TIME_SEC = 3.0;        // yaw-dwell duration
     static constexpr double WP_TIMEOUT_SEC = 3.0;
+    static constexpr double FIRST_WP_TIMEOUT_SEC = 10.0;  // timeout only for reaching first WP
+
 
     rclcpp::Publisher<OffboardControlMode>::SharedPtr offboard_ctrl_pub_;
     rclcpp::Publisher<TrajectorySetpoint>::SharedPtr traj_sp_pub_;
@@ -212,6 +214,9 @@ private:
             if (last_wp_seen != wp_idx_) {
                 last_wp_seen   = wp_idx_;
                 wp_start_time_ = get_clock()->now();
+                if (wp_idx_ == 0){
+                    RCLPP_INFO(get_logger(),"[TAKEOFF] Timeout to reach WP0 is %.1f seconds", FIRST_WP_TIMEOUT_SEC);
+                }
             }
             // correct offset
             const float tgt_x = init_x_ + pos[0];
@@ -227,11 +232,12 @@ private:
             float dist = std::sqrt(dx * dx + dy * dy + dz * dz);
             double yaw_diff = std::fabs(wrap_pi(cmd_yaw - last_cmd_yaw_));
 
-            if ((get_clock()->now() - wp_start_time_).seconds() > WP_TIMEOUT_SEC)
+            double timeout_sec = (wp_idx_ == 0) ? FIRST_WP_TIMEOUT_SEC : WP_TIMEOUT_SEC;
+            if ((get_clock()->now() - wp_start_time_).seconds() > timeout_sec)
             {
                 RCLCPP_WARN(get_logger(),
                             "WP %zu timed‑out after %.1f s → skipping",
-                            wp_idx_, WP_TIMEOUT_SEC);
+                            wp_idx_, timeout_sec);
                 ++wp_idx_;
                 in_dwell_ = false;
                 /* reset timer for the new WP */
