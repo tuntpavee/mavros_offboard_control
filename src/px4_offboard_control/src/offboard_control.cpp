@@ -215,7 +215,7 @@ private:
                 last_wp_seen   = wp_idx_;
                 wp_start_time_ = get_clock()->now();
                 if (wp_idx_ == 0){
-                    RCLPP_INFO(get_logger(),"[TAKEOFF] Timeout to reach WP0 is %.1f seconds", FIRST_WP_TIMEOUT_SEC);
+                    RCLCPP_INFO(get_logger(),"[TAKEOFF] Timeout to reach WP0 is %.1f seconds", FIRST_WP_TIMEOUT_SEC);
                 }
             }
             // correct offset
